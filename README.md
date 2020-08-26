@@ -1,16 +1,14 @@
-# TODO:
-+ Look into x-array for handling satellite data
+# Chlorophyll-a Comparison
+Contains jupyter notebooks to create figures for a paper titled "A Comparison of Biogeochemical Argo Sensors, Remote Sensing Systems, and Shipborne Field Fluorometers to Measure Chlorophyll a Concentrations in the Pacific Ocean off the Northern Coast of New Zealand"
 
-Objective: 
-1. Get current graphs up-to-date w/ most recent satellite data
-2. Incorporate old cruises
-  + Get all data into standardized format
-  + In Excel, play around with HC/FT data until everything *looks* correct
-  + Implement in python to get relationship
-  + Create new plots, lookup
-3. Incorporate more bgc floats
+Original code (in archive folder and in `Extended Abstract Figures.ipynb`) was written during my time with SEA Semester on board the SSV *Robert C. Seamans* and was used for the original extended abstract submission. For the final paper, some code was rewritten and the figures in the `Revised Figures` notebooks were used.
 
-
-+ Chl-a data info: https://oceancolor.gsfc.nasa.gov/atbd/chlor_a/
-"The current implementation for the default chlorophyll algorithm (chlor_a) employs the standard OC3/OC4 (OCx) band ratio algorithm merged with the color index (CI) of Hu et al. (2012). As described in that paper, this refinement is restricted to relatively clear water, and the general impact is to reduce artifacts and biases in clear-water chlorophyll retrievals due to residual glint, stray light, atmospheric correction errors, and white or spectrally-linear bias errors in Rrs. As implemented, the algorithm diverges slightly from what was published in Hu et al. (2012) in that the transition between CI and OCx now occurs at 0.15 < CI < 0.2 mg/m3 to ensure a smooth transition."
-+ Settings: VIIRS-SNPP, Chlorophyll concentration, 8-day, 4km resolution, mapped, extract
+# Data Info
++ Satellite Data:
+  + Ocean Color algorithm info: https://oceancolor.gsfc.nasa.gov/atbd/chlor_a/
+  + Product Settings: VIIRS-SNPP, Chlorophyll concentration, 8-day, 4km resolution, mapped, extract
++ Biogeochemical Argo:
+  + Used float 5905108
+  + Data obtained from the US-GODAE GDAC FTP site ftp://usgodae.org/pub/outgoing/argo/dac/aoml/5905108/
++ Flow-through dataset:
+  + Collected using a Turner Designs Model 10-AU Benchtop Fluorometer on https://www.sea.edu/ships_crew/shipboard_equipment
